@@ -20,7 +20,8 @@ class AmazonTransaction
       "No discount to apple"
     else
       discount = (100.0 - @discount)*@total
-      new_total = @total = discount
+      new_total = @total - discount
+      @total = new_total
       "You're new total is #{@total.to_i}"
     end
   end
