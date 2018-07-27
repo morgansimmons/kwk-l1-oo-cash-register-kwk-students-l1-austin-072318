@@ -22,6 +22,7 @@ class AmazonTransaction
       a = 100.0 - @discount
       b = @total * a 
       @total = @total - b
+      "You're new total is #{@total.to_i}"
   end
   
   
