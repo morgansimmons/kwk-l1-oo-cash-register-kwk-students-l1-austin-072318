@@ -23,6 +23,7 @@ class AmazonTransaction
       b = @total * a 
       @total = @total - b
       "You're new total is #{@total.to_i}"
+    end
   end
   
   
