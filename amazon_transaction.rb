@@ -16,7 +16,9 @@ class AmazonTransaction
   end
   
   def apply_discount
-    total = price*@discount
+    a = 100.0 - @discount
+    b = @total * a 
+    @total = @total - b
   end
   
   
