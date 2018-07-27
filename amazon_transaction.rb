@@ -20,6 +20,7 @@ class AmazonTransaction
       "No discount to apple"
     else
       a = 100.0 - @discount
+      b = a /100.0
       
       discount = ( (100.0 - @discount)/100.0 )*@total
       new_total = @total - discount
