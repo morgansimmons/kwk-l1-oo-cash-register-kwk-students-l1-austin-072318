@@ -21,7 +21,7 @@ class AmazonTransaction
     else
       discount = ( (100.0 - @discount)/100.0 )*@total
       new_total = @total - discount
-      @total = new_total
+      @total = new_total.to_i
     end
   end
   
