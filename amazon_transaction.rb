@@ -17,7 +17,7 @@ class AmazonTransaction
   
   def apply_discount
     if @discount == 0
-      "No discount to apply"
+      "There is no discount to apply."
     else
       discount = (@discount / 100.0) * @total
       @total = @total - discount
