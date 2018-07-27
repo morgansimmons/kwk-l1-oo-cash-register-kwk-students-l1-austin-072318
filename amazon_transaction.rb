@@ -19,9 +19,6 @@ class AmazonTransaction
     if @discount == 0
       "No discount to apply"
     else
-      # b = @discount /100.0
-      # c = b * @total
-      # @total = @total - c
       discount = (@discount / 100.0) * @total
       @total = @total - discount
       "After the discount, the total comes to $#{@total.to_i}."
