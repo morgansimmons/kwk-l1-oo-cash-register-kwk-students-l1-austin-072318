@@ -5,7 +5,7 @@ class AmazonTransaction
   def initialize(discount = 0)
     @total = 0
     @items = []
-    @discount = discount
+    @@discount = discount
   end
   
   def add_item(title, price, quantity = 1)
@@ -16,7 +16,7 @@ class AmazonTransaction
   end
   
   def apply_discount
-    total = price - discount
+    total = price*@@discount
   end
   
   
