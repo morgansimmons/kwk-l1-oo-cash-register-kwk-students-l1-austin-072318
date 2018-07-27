@@ -22,7 +22,7 @@ class AmazonTransaction
       a = 100.0 - @discount
       b = a /100.0
       c = b * @total
-      @total = @total - c
+      @total = (@total - c).to_i
     end
   end
   
