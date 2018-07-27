@@ -16,7 +16,7 @@ class AmazonTransaction
   end
   
   def apply_discount
-    if discount == 0
+    if @discount == 0
       "No discount to apple"
     else
       discount = (100.0 - @discount)*@total
