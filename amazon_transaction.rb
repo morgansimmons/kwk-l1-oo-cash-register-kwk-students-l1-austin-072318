@@ -19,6 +19,8 @@ class AmazonTransaction
     if @discount == 0
       "No discount to apple"
     else
+      a = 100.0 - @discount
+      
       discount = ( (100.0 - @discount)/100.0 )*@total
       new_total = @total - discount
       @total = new_total.to_i
